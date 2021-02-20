@@ -1,8 +1,6 @@
 import os
-# import tensorflow as tf
+import tensorflow as tf
 
-import tensorflow.compat.v1 as tf
-tf.disable_v2_behavior() 
 
 # Turn off TensorFlow warning messages in program output
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
