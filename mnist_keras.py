@@ -8,3 +8,5 @@ import tensorflow_datasets as tfds
     as_supervised=True,
     with_info=True,
 )
+
+print(ds_train.shape)
