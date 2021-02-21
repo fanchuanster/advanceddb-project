@@ -6,11 +6,9 @@ import tensorflow as tf
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 # Define computational grph
-X = tf.placeholder(tf.float32, nme='X')
-Y = tf.placeholder(tf.float32, nme='Y')
+X = [1,1,2]
+Y = [4,2,3]
 
-addition = tf.add(X, Y, name='addition')
+addition = tf.add(X, Y)
 
-with tf.Session() as session:
-    result = session.run(addition, feed_dict={X: [1,1,2], Y:[4,2,3]})
-    print(result)
+print(addition)
